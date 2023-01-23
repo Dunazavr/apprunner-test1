@@ -3,14 +3,11 @@ runtime: nodejs16
 build:
   commands:
     build:
-      - yum install -y build-essential
       - npm install
       - npm run build
 run:
   runtime-version: 16.19.0
-  resources:
-    cpu: 1
-    memory: 2G
+  command: npm run start
   network:
     port: 3333
-  command: npm run start
+    env: APP_PORT
