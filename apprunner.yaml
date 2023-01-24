@@ -9,5 +9,5 @@ run:
   runtime-version: 16.19.0
   command: npm run start
   network:
-    port: 3333
+    port: 3344
     env: APP_PORT
